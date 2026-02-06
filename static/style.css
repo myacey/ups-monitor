@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background: #0f172a;
+    color: #e5e7eb;
+    font-family: system-ui, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #020617;
+    border: 1px solid #334155;
+    color: #e5e7eb;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.active {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+canvas {
+    background: #020617;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 10px;
+}

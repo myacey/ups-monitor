@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>UPS Monitor</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>UPS monitor</h1>
+
+        <div class="controls">
+            <button data-range="5">5s</button>
+            <button data-range="15">15s</button>
+            <button data-range="60" class="active">60s</button>
+            <button data-range="600">10m</button>
+            <button data-range="1800">30m</button>
+            <button data-range="3600">1h</button>
+        </div>
+
+        <canvas id="voltageChart"></canvas>
+        <canvas id="loadChart"></canvas>   
+        <canvas id="batteryChart"></canvas>
+        <canvas id="tempChart"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
